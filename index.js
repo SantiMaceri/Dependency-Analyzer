@@ -6,19 +6,14 @@ const https = require('https');
 const cheerio = require('cheerio');
 const csv = require('csv-parser');
 const fs = require('fs');
-const util = require('util');
 const getStream = require('get-stream');
 const fsp = require('fs').promises;
 const CSVFILE = 'sites.csv'
 
 
-const readFile = util.promisify(fs.readFile);
 
 
-
-
-
-app.listen(port, () => console.log(`Hello world app listening on port ${port}!`))
+app.listen(port, () => console.log(`Dependency Analyzer listening on port ${port}!`))
 
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 const csvWriter = createCsvWriter({
