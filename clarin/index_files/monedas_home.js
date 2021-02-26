@@ -1,0 +1,2 @@
+function updateMoney(){$.ajax({url:'https://www.clarin.com/economia/divisas-acciones-bonos/monedas.json',method:'GET',beforeSend:function(){}}).done(function(data){$.each(data,function(index,value){console.log(value.codigo);if(value.papel=="DBNA"||value.papel=="EURPES"||value.papel=="CMPES"){$("#"+value.codigo).html(value.ultimo);}});});}
+$(".divisas__trigger").click(function(){console.log("entro");$("#MVdivisas").toggleClass("active");});updateMoney();setInterval(updateMoney,180000);
