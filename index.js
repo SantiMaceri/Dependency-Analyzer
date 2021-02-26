@@ -22,7 +22,7 @@ app.listen(port, () => console.log(`Hello world app listening on port ${port}!`)
 
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 const csvWriter = createCsvWriter({
-  path: 'sites.csv',
+  path: CSVFILE,
   header: [
     {id: 'name', title: 'Name'},
     {id: 'source', title: 'Source'},
