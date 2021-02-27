@@ -10,6 +10,8 @@ To start the app run
 or if you have nodemon
 	`nodemon index.js`
 
+The default port is setted at 3000
+
 1. The project already has a csv created to test it.
 2. It includes one row that does not have a file (trello), to make sure validations are correct.
 3. The project assumes that the folders and files from the htmls are located in the root folder (like Clarin example)
