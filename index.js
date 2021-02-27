@@ -148,14 +148,14 @@ addDependenciesFromHtml = (row, html, output) => {
 getPromise = (url) => {
   return new Promise((resolve, reject) => {
     https.get(url, (response) => {
-      let chunks_of_data = [];
+      const chunks_of_data = [];
 
       response.on("data", (fragments) => {
         chunks_of_data.push(fragments);
       });
 
       response.on("end", () => {
-        let response_body = Buffer.concat(chunks_of_data);
+        const response_body = Buffer.concat(chunks_of_data);
         resolve(response_body.toString());
       });
 
@@ -168,10 +168,8 @@ getPromise = (url) => {
 
 makeSynchronousRequest = async (url) => {
   try {
-    let http_promise = getPromise(url);
-    let response_body = await http_promise;
-
-    // holds response from server that is passed when Promise is resolved
+    const http_promise = getPromise(url);
+    const response_body = await http_promise;
     return response_body;
   } catch (error) {
     // Promise rejected
