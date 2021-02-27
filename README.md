@@ -1,9 +1,18 @@
 # Dependency-Analyzer
-Dependency analizer made for NaNLABS challenge. Clone the repo and run
+Dependency analizer made for NaNLABS challenge. 
+
+Clone the repo and run
 	`npm install`
+	
+To start the app run
+	`node index.js`
+	
+or if you have nodemon
+	`nodemon index.js`
+
 1. The project already has a csv created to test it.
 2. It includes one row that does not have a file (trello), to make sure validations are correct.
-3. The project assumes that the folders and files from the htmls are goint to be located in the root folder (like Clarin example)
+3. The project assumes that the folders and files from the htmls are located in the root folder (like Clarin example)
 
 ## Endpoints
 
