@@ -15,6 +15,7 @@ The default port is setted at 3000
 1. The project already has a csv created to test it.
 2. It includes one row that does not have a file (trello), to make sure validations are correct.
 3. The project assumes that the folders and files from the htmls are located in the root folder (like Clarin example)
+4. For practical purposes, all the functionality of the app is reflected in the index.js file for this little challenge. In a real case, it would be convenient to separate the different functionalities into different files.
 
 ## Endpoints
 
